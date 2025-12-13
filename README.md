@@ -1,5 +1,5 @@
 <h1 align="center">Device Activity Tracker</h1>
-<p align="center">WhatsApp Activity Tracker via RTT Analysis</p>
+<p align="center">WhatsApp & Signal Activity Tracker via RTT Analysis</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-20+-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js"/>
@@ -111,10 +111,11 @@ In the web interface, you can switch between probe methods using the dropdown in
 ```
 device-activity-tracker/
 ├── src/
-│   ├── tracker.ts      # Core RTT analysis logic
-│   ├── server.ts       # Backend API server
-│   └── index.ts        # CLI interface
-├── client/             # React web interface
+│   ├── tracker.ts         # WhatsApp RTT analysis logic
+│   ├── signal-tracker.ts  # Signal RTT analysis logic
+│   ├── server.ts          # Backend API server (both platforms)
+│   └── index.ts           # CLI interface
+├── client/                # React web interface
 └── package.json
 ```
 
